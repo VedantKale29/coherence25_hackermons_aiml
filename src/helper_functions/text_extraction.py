@@ -102,6 +102,3 @@ def skills_extraction(text : str, secret_key:SecretStr, model_id:str) -> None:
     output = chat_prompt | llm | parser
     print(output["skills"])
     return output["skills"]
-
-# if __name__ == "__main__":
-    skills_extraction
