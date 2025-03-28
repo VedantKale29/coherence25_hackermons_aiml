@@ -16,20 +16,41 @@ from nltk.tokenize import word_tokenize
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_groq.chat_models import ChatGroq
+from langchain.document_loaders import PyMuPDFLoader
+
+# Extract text from a PDF file
+reader = PyMuPDFLoader("10554236.pdf")
+documents = reader.load()  # Returns a list of Document objects
+
+# Extract text from each page
+text = ""
+for doc in documents:
+    text += doc.page_content + "\n"
+
+# Print extracted text
+print(text)
 
 
 stop_words = set(stopwords.words('english'))
 
 class TextLoader(Enum):
-    Langchain_loader = PyPDFLoader
+    Langchain_loader = PyMuPDFLoader
     Pypdf = PdfReader
     pass
 
-def extract_text_from_pdf(pdf_path, loader : TextLoader = TextLoader.Pypdf):
-    reader = PdfReader(pdf_path)
-    text = ''
-    for page in reader.pages:
-        text += page.extract_text()
+def extract_text_from_pdf(pdf_path, loader : TextLoader = TextLoader.Langchain_loader):
+    # reader = PdfReader(pdf_path)
+    # text = ''
+    # for page in reader.pages:
+    #     text += page.extract_text()
+    # return text
+    reader = PyMuPDFLoader(pdf_path)
+    documents = reader.load()  # Returns a list of Document objects
+
+    # Extract text from each page
+    text = ""
+    for doc in documents:
+        text += doc.page_content + "\n"
     return text
 
 def preprocess_text(
@@ -79,4 +100,8 @@ def skills_extraction(text : str, secret_key:SecretStr, model_id:str) -> None:
     #chain the functions
 
     output = chat_prompt | llm | parser
+    print(output["skills"])
     return output["skills"]
+
+# if __name__ == "__main__":
+    skills_extraction
