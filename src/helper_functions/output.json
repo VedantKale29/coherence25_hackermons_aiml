@@ -1,0 +1,104 @@
+{
+    "skills": [
+        "Account reconciliations",
+        "Financial reporting",
+        "Critical thinking",
+        "Analysis of financial systems",
+        "ERP (Enterprise Resource Planning) software",
+        "Financial planning",
+        "Budgeting",
+        "Program Management",
+        "Accounting",
+        "General Accounting",
+        "Accounts Payable",
+        "Data analysis",
+        "Problem-solving",
+        "Teamwork",
+        "Communication",
+        "Leadership",
+        "Supervisory skills",
+        "Training",
+        "Policy and procedure development",
+        "Budget management",
+        "Performance management",
+        "Vendor management",
+        "Financial systems analysis",
+        "Reporting",
+        "Auditing",
+        "Data retrieval (Louis II)",
+        "Automated tool development",
+        "System analysis",
+        "Process improvement",
+        "Conflict resolution",
+        "Negotiation",
+        "Decision support",
+        "Financial advice",
+        "Compliance",
+        "Risk management",
+        "Database management",
+        "Report standardization",
+        "Reconciliation",
+        "Resource allocation",
+        "Oversight",
+        "Financial metrics",
+        "Government Purchase Card (GPC) management",
+        "Defense Travel System (DTS) management",
+        "Open Document Analysis (ODA) tool"
+    ],
+    "publication": [],
+    "certificate": [
+        "Certified Defense Financial Manager, CDFM"
+    ],
+    "company names": [
+        "Company Name",
+        "Company Name",
+        "Company Name",
+        "Company Name",
+        "Company Name",
+        "Company Name"
+    ],
+    "number of year timeline": "20 years",
+    "education institute name": [
+        "Northern Maine Community College",
+        "Husson College",
+        "Professional Military Comptroller School"
+    ],
+    "total time in company": null,
+    "passing year": [
+        1994,
+        1994
+    ],
+    "marks in each degree with degree name": {
+        "Associate : Accounting": "3.41 GPA"
+    },
+    "role position in company": [
+        "Accountant",
+        "Resource Advisor",
+        "Staff Accountant",
+        "Chief, Reports Branch. Accounts Maintenance and Control",
+        "Chief, Accounts Payable Branch",
+        "Chief, Recon and Reports Branch",
+        "Chief, Accounts Payable Branch",
+        "Accountant, Network Assistant Team",
+        "Supervisor, Accounts Control Branch"
+    ],
+    "project and their description": {
+        "Tiger team to resolve General Ledger postings in DEAMS": "Identified and resolved General Ledger postings in DEAMS totaling $360B in accounting adjustments, enabling the first successful fiscal year-end close for 2012.",
+        "Automated tool to identify duplicate obligations": "Developed an automated tool (with DFAS Europe) that identified duplicate obligations, allowing HQ USAFE to deobligate over $5M.",
+        "Automated tool for USAFE financial metrics": "Collaborated with DFAS Limestone to develop an automated tool providing senior leaders visibility into USAFE unit compliance with GPC rules and regulations.",
+        "GPC account issue resolution": "Identified and resolved a problem with five GPC accounts rejecting during the automated interface process, eliminating rework and payment delays.",
+        "ODA tool training": "Provided remote training on the Open Document Analysis (ODA) tool, exceeding expectations and eliminating TDY travel costs.",
+        "Suspense account elimination initiative": "Identified and addressed suspense accounts, contributing to progress towards the Department of Treasury's mandate to discontinue them.",
+        "TFMS reporting transition": "Orchestrated the transition of reporting requirements for the Transportation Financial Management System (TFMS) workload from DFAS Omaha to Limestone and streamlined processes.",
+        "Overaged invoice and backlog reduction": "Reduced overaged invoice percentage by 19% and eliminated backlog of documents over 20 days old within three months.",
+        "Employee Performance Plans": "Established Employee Performance Plans linking employee performance to DFAS Strategies and Balance Scorecard goals.",
+        "Ad-hoc data queries": "Produced ad-hoc data queries using Louis II software to reduce man-hours for complex finance and accounting functions.",
+        "DFAS consolidation": "Coordinated with DFAS Denver and Omaha on the consolidation of the first geographically separated Defense Accounting Office into DFAS.",
+        "Resource Advisor training": "Provided training to over 400 base-level personnel on DFAS structure and funds management."
+    },
+    "extra curricular activity": [
+        "American Society Of Military Comptrollers"
+    ],
+    "phone number": null,
+    "mail id": null
+}

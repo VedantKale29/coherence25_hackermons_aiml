@@ -1,29 +1,9 @@
-'''
-This module is responsible for dealing with text. Includes three sub-modules :
-1. text extraction from pdf - done
-2. text cleaning functions - done
-3. skills extraction from text - done
-'''
-from typing import List, Tuple, Union
-from enum import Enum
-from pydantic import SecretStr
-from pypdf import PdfReader
-from langchain_community.document_loaders import PyPDFLoader
-import re
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
-from nltk.tokenize import word_tokenize
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import JsonOutputParser
-from langchain_groq.chat_models import ChatGroq
-from langchain.document_loaders import PyMuPDFLoader
 import os
 import json
 from langchain_community.document_loaders import PyMuPDFLoader
 from google import genai
 from dotenv import load_dotenv
 import re
-
 
 def extract_json_from_string(text: str) -> str:
     """
@@ -45,6 +25,7 @@ def extract_json_from_string(text: str) -> str:
             print("Content:\n", cleaned_text)
             raise e
 
+
 # Load environment variables from the .env file
 load_dotenv()
 
@@ -54,31 +35,18 @@ gemini_api_key = os.getenv("GEMINI_API_KEY")
 # Initialize the Gemini client with the API key
 client = genai.Client(api_key=gemini_api_key)
 
-# # Extract text from a PDF file
-# reader = PyMuPDFLoader("10554236.pdf")
-# documents = reader.load()  # Returns a list of Document objects
+def extract_text_from_pdf(pdf_path: str) -> str:
+    """
+    Extracts text from a PDF file using PyMuPDFLoader.
 
-# # Extract text from each page
-# text = ""
-# for doc in documents:
-#     text += doc.page_content + "\n"
+    Args:
+        pdf_path (str): The path to the PDF file.
 
-# # Print extracted text
-# print(text)
-
-
-stop_words = set(stopwords.words('english'))
-
-class TextLoader(Enum):
-    Langchain_loader = PyMuPDFLoader
-    Pypdf = PdfReader
-    pass
-
-
-
-def extract_text_from_pdf(pdf_path: str, loader : TextLoader = TextLoader.Langchain_loader) -> str:
-    reader = PyMuPDFLoader(pdf_path)
-    documents = reader.load()  # Returns a list of Document objects
+    Returns:
+        str: The extracted text.
+    """
+    loader = PyMuPDFLoader(pdf_path)
+    documents = loader.load()
     text = "\n".join(doc.page_content for doc in documents)
     return text
 
@@ -95,32 +63,6 @@ def count_tokens(text: str) -> int:
     # Tokenization logic depends on the tokenizer used by the Gemini model
     # Placeholder function: replace with actual token counting logic
     return len(text.split())
-
-def preprocess_text(
-        text: str, 
-        extra_info = False, 
-        objects  = PorterStemmer()
-        ) -> Union[str, Tuple[str, List[str], List[str]]]:
-
-    ps = objects
-    #lowercasing
-    text = text.lower()
-    # remove special characters
-    text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
-    #remove hastags and mentions
-    user_mentions = re.findall(r'@\w+', text)
-    text = re.sub(r'@\w+', '', text)
-    text = re.sub(r'#\w+', '', text)
-    #Store urls -> may contain github/linkedin links
-    urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
-    text = re.sub('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '', text)
-    # remove stop words
-    text = ' '.join([word for word in text.split() if word not in stop_words])
-    #lemmatization
-    text = ' '.join([ps.stem(word) for word in word_tokenize(text)])
-    if extra_info:
-        return text, urls, user_mentions
-    return text
 
 def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
     """
@@ -202,7 +144,8 @@ def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
             json.dump(data, file, indent=4)
         return {}
 
-
+# Example usage:
 pdf_path = "10554236.pdf"
 resume_text = extract_text_from_pdf(pdf_path)
 extracted_data = skills_extraction(resume_text)
+# print(extracted_data)
