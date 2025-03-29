@@ -1,7 +1,7 @@
 {
     "public_identifier": "vedant-kale-b1836a25a",
-    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedant-kale-b1836a25a/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=705fe6d6206173c2cccba9758c81b454b964cca1bb26a0d2c71638a00eaf4a32",
-    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedant-kale-b1836a25a/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6ca171baf7e7cce3dfc0abf528d2488365182f0f005b06bfbb0802b4feb407c3",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedant-kale-b1836a25a/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b7375db8d0fc63bb2c1e611fb8781cf29f91eec4aeb818a264f7f823d193dc6b",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedant-kale-b1836a25a/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=639334088c904a461690d73dec449824f2666ac133dcfb25b4bac89d172c6b6d",
     "first_name": "Vedant",
     "last_name": "Kale",
     "full_name": "Vedant Kale",
@@ -27,7 +27,7 @@
             "title": "Autonomous Vehicle Engineer ",
             "description": null,
             "location": "Mumbai, Maharashtra, India",
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/vcet-solecthon/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=1ff1a62e554aaab8032f364a7397d130a031df9bf22fa0cd78425e335ae733ae"
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/vcet-solecthon/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=78f0a66f8627577d98715b4028b5b5493afbf8e9de511881738096edc7dd3fd6"
         },
         {
             "starts_at": {
@@ -42,7 +42,7 @@
             "title": "Associate",
             "description": null,
             "location": "Mumbai, Maharashtra, India",
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/e-cell-vcet/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=3bf5892884f79804eb5178675a99f8fd025982e09e76589b5fd9a8b9b8519984"
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/e-cell-vcet/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=45515bfcebab36fcbc44521312b962ae053f568fa9af859ea93a747009676cad"
         },
         {
             "starts_at": {
@@ -61,7 +61,7 @@
             "title": "Web Developer",
             "description": null,
             "location": "Mumbai, Maharashtra, India",
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/codsoft/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=258483a4c7e985a08983a301a219a2e51589685a5caa374acfde367a9c23b2ee"
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/codsoft/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=3338bf1c5565149e84a061b353a00f74765881d147aab0b6dceaa0ae1c24065e"
         },
         {
             "starts_at": {
@@ -80,7 +80,7 @@
             "title": "Machine Learning Engineer",
             "description": null,
             "location": "Mumbai, Maharashtra, India",
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/bharat-intern/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee6bc62c8752af11d9e177ace0d71a109683549356c2db16194d6eacd690433c"
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/bharat-intern/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=2620c9e366e35332da48d406d7037d87bcff02182001867300c721cf9134de5a"
         }
     ],
     "education": [
@@ -101,7 +101,7 @@
             "school_linkedin_profile_url": "https://www.linkedin.com/company/13410397/",
             "school_facebook_profile_url": null,
             "description": null,
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/vcetvasai/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=937d71faa10c5496f3ef2b29a102b727dcdbcd02bdd2992adc48bb4aeb90af59",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/vcetvasai/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=913d34074e5415d5fd8e46e6487b65b1fc7022ec35742ebb2aac28cd5f4b33db",
             "grade": null,
             "activities_and_societies": null
         },
@@ -118,7 +118,7 @@
             "school_linkedin_profile_url": "https://www.linkedin.com/company/15093732/",
             "school_facebook_profile_url": null,
             "description": null,
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/university-of-mumbai/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=909416a0e4cbb9fde6ad2bea9b1154ee5f39ef0def86c6a3a635cd9edbb773d8",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/university-of-mumbai/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T070436Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=6821d54f55639236f8b4e429d8b708e399976ba5ced17ea45e7ebeb1a5cc3e96",
             "grade": null,
             "activities_and_societies": null
         }

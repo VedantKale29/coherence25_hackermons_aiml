@@ -1,5 +1,5 @@
 {
-    "skills": [
+    "skills or languages or framework": [
         "Python",
         "C",
         "Java",
@@ -12,21 +12,16 @@
         "Django",
         "Flask",
         "Git",
-        "Machine Learning",
-        "Data Science",
-        "Data Analysis",
-        "Regression Modeling",
-        "Web Development",
-        "RESTful APIs",
-        "Computer Vision",
-        "A* Algorithm",
-        "Deep Learning",
-        "NLP",
-        "Web Scraping",
         "Kotlin",
         "Unity",
         "Google AR Toolkit",
-        "Android Development"
+        "A*",
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "Computer Vision",
+        "RESTful APIs",
+        "Web scraping"
     ],
     "publication": [],
     "certificate": [
@@ -38,7 +33,7 @@
         "Bharat Intern",
         "CodSoft"
     ],
-    "number of year timeline": "November 2022 \u2013 Present",
+    "number of year timeline": "1 year",
     "education institute name": [
         "Vidyavardhini College of Engineering and Technology"
     ],
@@ -52,7 +47,7 @@
         "Web Development Intern"
     ],
     "role and their description": {
-        "Machine Learning Intern": "Created and fine-tuned prediction models using machine learning algorithms. Implemented regression models to analyze trends. Conducted data analysis on the electric vehicle sector.",
+        "Machine Learning Intern": "Created and fine-tuned prediction models, including a house price prediction model. Implemented regression models. Conducted comprehensive data analysis on the electric vehicle (EV) sector.",
         "Web Development Intern": "Designed and developed a full stack website for enterprise data management. Developed secure server-side applications using Django Flask. Created and integrated RESTful APIs."
     },
     "project and their description": {

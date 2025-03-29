@@ -6,16 +6,12 @@ This module is responsible for dealing with text. Includes three sub-modules :
 '''
 from typing import List, Tuple, Union
 from enum import Enum
-from pydantic import SecretStr
 from pypdf import PdfReader
 from langchain_community.document_loaders import PyPDFLoader
 import re
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers import JsonOutputParser
-from langchain_groq.chat_models import ChatGroq
 from langchain.document_loaders import PyMuPDFLoader
 import os
 import json
@@ -23,7 +19,8 @@ from langchain_community.document_loaders import PyMuPDFLoader
 from google import genai
 from dotenv import load_dotenv
 import re
-
+import asyncio
+import httpx
 
 def extract_json_from_string(text: str) -> str:
     """
@@ -96,45 +93,107 @@ def count_tokens(text: str) -> int:
     # Placeholder function: replace with actual token counting logic
     return len(text.split())
 
-def preprocess_text(
-        text: str, 
-        extra_info = False, 
-        objects  = PorterStemmer()
-        ) -> Union[str, Tuple[str, List[str], List[str]]]:
+# def preprocess_text(
+#         text: str, 
+#         extra_info = False, 
+#         objects  = PorterStemmer()
+#         ) -> Union[str, Tuple[str, List[str], List[str]]]:
 
-    ps = objects
-    #lowercasing
-    text = text.lower()
-    # remove special characters
-    text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
-    #remove hastags and mentions
-    user_mentions = re.findall(r'@\w+', text)
-    text = re.sub(r'@\w+', '', text)
-    text = re.sub(r'#\w+', '', text)
-    #Store urls -> may contain github/linkedin links
-    urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
-    text = re.sub('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '', text)
-    # remove stop words
-    text = ' '.join([word for word in text.split() if word not in stop_words])
-    #lemmatization
-    text = ' '.join([ps.stem(word) for word in word_tokenize(text)])
-    if extra_info:
-        return text, urls, user_mentions
-    return text
+#     ps = objects
+#     #lowercasing
+#     text = text.lower()
+#     # remove special characters
+#     text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
+#     #remove hastags and mentions
+#     user_mentions = re.findall(r'@\w+', text)
+#     text = re.sub(r'@\w+', '', text)
+#     text = re.sub(r'#\w+', '', text)
+#     #Store urls -> may contain github/linkedin links
+#     urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
+#     text = re.sub('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '', text)
+#     # remove stop words
+#     text = ' '.join([word for word in text.split() if word not in stop_words])
+#     #lemmatization
+#     text = ' '.join([ps.stem(word) for word in word_tokenize(text)])
+#     if extra_info:
+#         return text, urls, user_mentions
+#     return text
 
 
 
-def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
-    """
-    Extracts structured information from resume text using Gemini's API.
+# async def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
+#     """
+#     Extracts structured information from resume text using Gemini's API.
 
-    Args:
-        text (str): The resume text.
-        model (str): The Gemini model to use.
+#     Args:
+#         text (str): The resume text.
+#         model (str): The Gemini model to use.
 
-    Returns:
-        dict: Extracted information in JSON format.
-    """
+#     Returns:
+#         dict: Extracted information in JSON format.
+#     """
+#     system_prompt = """
+#     You are a technical recruiter AI. Extract the following information from a candidate's resume in **valid JSON format**.
+
+#     Return ONLY JSON. Do not include any explanations, notes, or comments.
+
+#     Required JSON Structure:
+#     {
+#     "skills or languages or framework": [...],
+#     "publication": [...],
+#     "certificate": [...],
+#     "company names": [...],
+    
+#     "number of year timeline": "...",
+#     "education institute name": [...],
+#     "total time in company": "...",
+#     "passing year": [...],
+#     "marks in each degree with degree name": {
+#         "degree name": "grade or GPA"
+#     },
+#     "role position in company": [...],
+#     "role and their description": {
+#         "role name": "short description"
+#     },
+#     "project and their description": {
+#         "project name": "short description"
+#     },
+#     "extra curricular activity": [...],
+#     "phone number": "...",
+#     "mail id": "..."
+#     "github.com": "...",
+#     "linkedin.com": "...",
+    
+#     }
+
+#     Include implicit skills if they are clearly demonstrated in projects or experience.
+
+#     If a field is missing, return it with an empty list or null value.
+#     """
+
+
+#     # Check if the text exceeds the model's token limit
+#     # max_tokens = 6000  # Example limit; adjust based on the specific model's capabilities
+#     # if count_tokens(text) > max_tokens:
+#     #     raise ValueError("Input text exceeds the maximum token limit for the model.")
+
+    
+#     response = client.models.generate_content(
+#         model=model,
+#         contents=[system_prompt + "\n\n" + text],
+#         config={
+#             "temperature": 0.2,
+#             "topP": 0.95,
+#             "topK": 40,
+#             "maxOutputTokens": 1024
+#         }
+#     )
+
+#     return response
+
+
+async def generate_from_gemini(text: str):
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={gemini_api_key}"
     system_prompt = """
     You are a technical recruiter AI. Extract the following information from a candidate's resume in **valid JSON format**.
 
@@ -173,26 +232,18 @@ def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
 
     If a field is missing, return it with an empty list or null value.
     """
+    payload = {
+        "contents": [{"parts": [{"text": system_prompt + '\n'+text}]}]
+    }
+    timeout = httpx.Timeout(read=None, connect=10.0, write=10.0, pool=None)
+    async with httpx.AsyncClient(timeout=timeout) as client:
+        response = await client.post(url, json=payload)
+        return response.json()
 
-
-    # Check if the text exceeds the model's token limit
-    max_tokens = 6000  # Example limit; adjust based on the specific model's capabilities
-    if count_tokens(text) > max_tokens:
-        raise ValueError("Input text exceeds the maximum token limit for the model.")
-
-    response = client.models.generate_content(
-        model=model,
-        contents=[system_prompt + "\n\n" + text],
-        config={
-            "temperature": 0.2,
-            "topP": 0.95,
-            "topK": 40,
-            "maxOutputTokens": 1024
-        }
-    )
-
+def uplading_data_into_json_file(response):
     try:
-        content = response.text
+        content = response["candidates"][0]["content"]["parts"][0]["text"].split("\n",1)[-1]
+        print(content)
         output_file = 'output.json'
         data = json.loads(content)
         with open(output_file, 'w+') as file:
@@ -211,7 +262,16 @@ def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
             json.dump(data, file, indent=4)
         return {}
 
-
-pdf_path = "vedant.pdf"
-resume_text = extract_text_from_pdf(pdf_path)
-extracted_data = skills_extraction(resume_text)
+async def main():
+    pdf_paths = ["vedant.pdf"]
+    resume_text = asyncio.gather(*[generate_from_gemini(extract_text_from_pdf(pdf_path)) for pdf_path in pdf_paths])
+    results = await resume_text
+    # print(results)
+    # print("======================")
+    for result in results:
+        # print(result)
+        uplading_data_into_json_file(result)
+    # print("======================================")
+    # extracted_data = skills_extraction(results.text)
+if __name__ == "__main__":
+    asyncio.run(main())
