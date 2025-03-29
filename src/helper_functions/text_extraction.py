@@ -122,6 +122,8 @@ def preprocess_text(
         return text, urls, user_mentions
     return text
 
+
+
 def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
     """
     Extracts structured information from resume text using Gemini's API.
@@ -140,10 +142,11 @@ def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
 
     Required JSON Structure:
     {
-    "skills": [...],
+    "skills or languages or framework": [...],
     "publication": [...],
     "certificate": [...],
     "company names": [...],
+    
     "number of year timeline": "...",
     "education institute name": [...],
     "total time in company": "...",
@@ -152,12 +155,18 @@ def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
         "degree name": "grade or GPA"
     },
     "role position in company": [...],
+    "role and their description": {
+        "role name": "short description"
+    },
     "project and their description": {
         "project name": "short description"
     },
     "extra curricular activity": [...],
     "phone number": "...",
     "mail id": "..."
+    "github.com": "...",
+    "linkedin.com": "...",
+    
     }
 
     Include implicit skills if they are clearly demonstrated in projects or experience.
@@ -203,6 +212,6 @@ def skills_extraction(text: str, model: str = "gemini-1.5-flash") -> dict:
         return {}
 
 
-pdf_path = "10554236.pdf"
+pdf_path = "vedant.pdf"
 resume_text = extract_text_from_pdf(pdf_path)
 extracted_data = skills_extraction(resume_text)

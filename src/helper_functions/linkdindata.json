@@ -1,0 +1,286 @@
+{
+    "public_identifier": "vedant-kale-b1836a25a",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedant-kale-b1836a25a/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=705fe6d6206173c2cccba9758c81b454b964cca1bb26a0d2c71638a00eaf4a32",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedant-kale-b1836a25a/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=6ca171baf7e7cce3dfc0abf528d2488365182f0f005b06bfbb0802b4feb407c3",
+    "first_name": "Vedant",
+    "last_name": "Kale",
+    "full_name": "Vedant Kale",
+    "follower_count": 789,
+    "occupation": "Autonomous Vehicle Engineer  at VCET Solecthon",
+    "headline": "Autonomous Team Member at @VCET SOLECTHON | Associate at E - Cell VCET | Students at Vidyavardhini College of Engineering and Technology",
+    "summary": null,
+    "country": "IN",
+    "country_full_name": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "experiences": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 11,
+                "year": 2022
+            },
+            "ends_at": null,
+            "company": "VCET Solecthon",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/vcet-solecthon",
+            "company_facebook_profile_url": null,
+            "title": "Autonomous Vehicle Engineer ",
+            "description": null,
+            "location": "Mumbai, Maharashtra, India",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/vcet-solecthon/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=1ff1a62e554aaab8032f364a7397d130a031df9bf22fa0cd78425e335ae733ae"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 11,
+                "year": 2022
+            },
+            "ends_at": null,
+            "company": "E-Cell Vcet",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/e-cell-vcet",
+            "company_facebook_profile_url": null,
+            "title": "Associate",
+            "description": null,
+            "location": "Mumbai, Maharashtra, India",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/e-cell-vcet/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=3bf5892884f79804eb5178675a99f8fd025982e09e76589b5fd9a8b9b8519984"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 12,
+                "year": 2023
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 1,
+                "year": 2024
+            },
+            "company": "CodSoft",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/codsoft",
+            "company_facebook_profile_url": null,
+            "title": "Web Developer",
+            "description": null,
+            "location": "Mumbai, Maharashtra, India",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/codsoft/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=258483a4c7e985a08983a301a219a2e51589685a5caa374acfde367a9c23b2ee"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 12,
+                "year": 2023
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 1,
+                "year": 2024
+            },
+            "company": "Bharat Intern",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/bharat-intern",
+            "company_facebook_profile_url": null,
+            "title": "Machine Learning Engineer",
+            "description": null,
+            "location": "Mumbai, Maharashtra, India",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/bharat-intern/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=ee6bc62c8752af11d9e177ace0d71a109683549356c2db16194d6eacd690433c"
+        }
+    ],
+    "education": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 11,
+                "year": 2022
+            },
+            "ends_at": {
+                "day": 30,
+                "month": 6,
+                "year": 2026
+            },
+            "field_of_study": null,
+            "degree_name": "Computer Engineering",
+            "school": "Vidyavardhini's College of Engineering and Technology",
+            "school_linkedin_profile_url": "https://www.linkedin.com/company/13410397/",
+            "school_facebook_profile_url": null,
+            "description": null,
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/vcetvasai/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=937d71faa10c5496f3ef2b29a102b727dcdbcd02bdd2992adc48bb4aeb90af59",
+            "grade": null,
+            "activities_and_societies": null
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2022
+            },
+            "ends_at": null,
+            "field_of_study": "Computer Engineering",
+            "degree_name": "Bachelor of Engineering - BE",
+            "school": "University of Mumbai",
+            "school_linkedin_profile_url": "https://www.linkedin.com/company/15093732/",
+            "school_facebook_profile_url": null,
+            "description": null,
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/university-of-mumbai/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20250329%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20250329T033828Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=909416a0e4cbb9fde6ad2bea9b1154ee5f39ef0def86c6a3a635cd9edbb773d8",
+            "grade": null,
+            "activities_and_societies": null
+        }
+    ],
+    "languages": [],
+    "languages_and_proficiencies": [],
+    "accomplishment_organisations": [],
+    "accomplishment_publications": [],
+    "accomplishment_honors_awards": [],
+    "accomplishment_patents": [],
+    "accomplishment_courses": [],
+    "accomplishment_projects": [],
+    "accomplishment_test_scores": [],
+    "volunteer_work": [],
+    "certifications": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2024
+            },
+            "ends_at": null,
+            "name": "Infosys Springboard Java Programing Fundamental",
+            "license_number": null,
+            "display_source": null,
+            "authority": "Infosys Springboard",
+            "url": null
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2024
+            },
+            "ends_at": null,
+            "name": "Microsoft Ignite: Generative AI with Azure OpenAI",
+            "license_number": null,
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "https://learn.microsoft.com/en-us/users/vedantkale-8284/achievements/vkh5ugam"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2024
+            },
+            "ends_at": null,
+            "name": "Microsoft: Python for beginners",
+            "license_number": null,
+            "display_source": "microsoft.com",
+            "authority": "Microsoft ",
+            "url": "https://learn.microsoft.com/api/achievements/share/en-in/vedantkale-8284/HYJAGVT8?sharingId=E24D297FEEB90682"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2024
+            },
+            "ends_at": null,
+            "name": "Infosys Springboard Programming Fundamentals using Python - Part 1",
+            "license_number": null,
+            "display_source": null,
+            "authority": "Infosys Springboard",
+            "url": null
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 2,
+                "year": 2024
+            },
+            "ends_at": null,
+            "name": "Infosys Springboard Programming Fundamentals using Python - Part 2",
+            "license_number": null,
+            "display_source": null,
+            "authority": "Infosys Springboard",
+            "url": null
+        }
+    ],
+    "connections": 775,
+    "people_also_viewed": [
+        {
+            "link": "https://www.linkedin.com/in/jui-kamlakar-patil-b171b7260?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEAZ_IMB8RMc7wAJNVgUa3E1_PE-t5udnpY",
+            "name": "Jui kamlakar Patil",
+            "summary": "Student \ud83d\udc69\u200d\ud83c\udf93 | Universal Collage of Engineering",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/shreya-chaudhari?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD8ZJykBobY1avVNVq_QcrM2artn8cwVuGY",
+            "name": "Shreya Chaudhari",
+            "summary": "SIH Finalist 2023,Vidyavardhini college of engineering and technology vasai",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/siddhesh-mane-90171a240?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADvoLZEBq85mFkNVH60R2TKoC6x8VD86esM",
+            "name": "Siddhesh Mane",
+            "summary": ".",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/priyanka-pilane-9991922aa?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEpr2AUBCMV5aNBQ8_JGP5cs1WrH9IpXBaI",
+            "name": "Priyanka Pilane",
+            "summary": "Student at Vidyavardhini's College of Engineering and Technology",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/tanvi-kadam-2921b0255?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD7a2I4B1bVO89PyF4jaxW9p9aPCzC80C4k",
+            "name": "Tanvi Kadam",
+            "summary": "Student at Vidyavardhini's College of engineering and Technology. PR HEAD of Team Yantrika.Associate at E-cell VCET",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/nirav-rathod-84632a232?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADoRrjYBACDe0o3Et9AhH4mOhb6tYd4AKVI",
+            "name": "Nirav Rathod",
+            "summary": "Vidyavardhini's College of Engineering and Technology",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/ronak-patel-5a0038206?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADRUjEgB7VaD0EPe_NgQ7VYO3Xv2pcVr0x8",
+            "name": "Ronak Patel",
+            "summary": "Chassis Head at VCET Solecthon | Solidworks | Ansys | Student at Vidyavardhini's College of Engineering and Technology",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/megh-patil-50926a25b?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD_utFkBXmx_KChkDAdifuXjjW0Z12v4C88",
+            "name": "Megh Patil",
+            "summary": "Student at Vidyavardhini's College of Engineering and Technology",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/tanvi-prabhudesai-71a34b25b?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD_x5kYBXEGx82naAUj8XEcblgfn6f4-QrQ",
+            "name": "Tanvi Prabhudesai",
+            "summary": "Attended Vidyavardhini's College of Engineering and Technology",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/akshat-parab-549254255?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD7c2wkBT3r-svPBc0u5WaBu_W-OFR-4wT8",
+            "name": "Akshat Parab",
+            "summary": "Student | IoT | Data Engineering | Powertrain Engineer @VCET Solecthon | Solar Racing | Python programming | Cloud based Services",
+            "location": null
+        }
+    ],
+    "recommendations": [],
+    "activities": [],
+    "similarly_named_profiles": [],
+    "articles": [],
+    "groups": [
+        {
+            "profile_pic_url": "https://media.licdn.com/dms/image/v2/C4D07AQHwzHzy4qrgaw/group-logo_image-shrink_400x400/group-logo_image-shrink_400x400/0/1631004564272?e=1743822000&v=beta&t=klmx6HPhOCJ9p7GRMVpWohxJNFRiLvtdtFuphaJj9FM",
+            "name": "Python Developers Community (moderated)",
+            "url": "https://www.linkedin.com/groups/25827"
+        }
+    ],
+    "skills": [],
+    "inferred_salary": null,
+    "gender": null,
+    "birth_date": null,
+    "industry": null,
+    "extra": null,
+    "interests": [],
+    "personal_emails": [],
+    "personal_numbers": []
+}
